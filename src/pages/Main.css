@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.title {
+    margin-top: 8vh;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 17px;
+    width: 290px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gbsw-logo {
+    margin-top: -3px;
+    width: 48px;
+    float: left;
+}
+.login_container{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 10vh;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.exclamation-phrases{
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}

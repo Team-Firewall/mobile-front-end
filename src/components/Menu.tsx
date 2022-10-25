@@ -62,29 +62,36 @@ const appPages: AppPage[] = [
 
 const Menu: React.FC = () => {
   const location = useLocation();
-
-  return (
-    <IonMenu contentId="main" type="overlay">
-      <IonContent>
-        <IonList id="inbox-list">
-          <IonListHeader>김진효 student</IonListHeader>
-          <IonNote>2-2 class 6 number</IonNote>
-          {appPages.map((appPage, index) => {
-            return (
-              <IonMenuToggle key={index} autoHide={false}>
-                <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                  <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
-                  <IonLabel>{appPage.title}</IonLabel>
-                </IonItem>
-              </IonMenuToggle>
-            );
-          })}
-        </IonList>
-          
-        {/* 카피라이트랑 로그아웃 버튼 추가 */}
-      </IonContent>
-    </IonMenu>
-  );
+  if(location.pathname=='/'){
+    //로그인을 하지 않았을때 아무것도 출력하지 않음.
+    return (
+      <></>
+    )
+  }
+  else{
+    return (
+      <IonMenu contentId="main" type="overlay">
+        <IonContent>
+          <IonList id="inbox-list">
+            <IonListHeader>김진효 student</IonListHeader>
+            <IonNote>2-2 class 6 number</IonNote>
+            {appPages.map((appPage, index) => {
+              return (
+                <IonMenuToggle key={index} autoHide={false}>
+                  <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
+                    <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
+                    <IonLabel>{appPage.title}</IonLabel>
+                  </IonItem>
+                </IonMenuToggle>
+              );
+            })}
+          </IonList>
+            
+          {/* 카피라이트랑 로그아웃 버튼 추가 */}
+        </IonContent>
+      </IonMenu>
+    );
+  }
 };
 
 export default Menu;

@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import RuleTable from './pages/RuleTable';
 
 setupIonicReact();
 
@@ -35,6 +36,9 @@ const App: React.FC = () => {
             <Route path="/" exact={true}>
               {/* <Redirect to="/main" /> */}
               <MainPage />
+            </Route>
+            <Route path="/ruleTable" exact={true}>
+              <RuleTable/>
             </Route>
             <Route path="/page/:name" exact={true}>
               <Page />

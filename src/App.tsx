@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import RuleTable from './pages/RuleTable';
 
+
 setupIonicReact();
 
 const App: React.FC = () => {
@@ -34,7 +35,6 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              {/* <Redirect to="/main" /> */}
               <MainPage />
             </Route>
             <Route path="/ruleTable" exact={true}>

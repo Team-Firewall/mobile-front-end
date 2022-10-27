@@ -34,12 +34,12 @@ const Main: React.FC = () => {
 			</div>
 
 			<div>
-				<IonButton href='/page/Inbox' color="tertiary" expand="block">
+				<IonButton href='/page/MyPage' color="primary" expand="block">
 					<IonIcon slot="start" icon={logIn}></IonIcon>
 					로그인
 				</IonButton>
 				<br/>
-				<IonButton href='/ruleTable' color="warning" expand="block">
+				<IonButton href='/ruleTable' color="secondary" expand="block">
 					<IonIcon slot="start" icon={book}></IonIcon>
 					상벌점 보기
 				</IonButton>

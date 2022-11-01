@@ -3,17 +3,18 @@ import MyPage from './MyPage';
 
 interface ContainerProps {
   name: string;
+  username: string;
 }
 
-const PageRouter: React.FC<ContainerProps> = ({ name }) => {
-    if(name=="MyPage"){
+const PageRouter: React.FC<ContainerProps> = (props) => {
+    if(props.name=="MyPage"){
         return (
-            <MyPage name={name}/>
+            <MyPage username={props.username} />
         );
     }
     else{
         return (
-            <ExploreContainer name={name}/>
+            <ExploreContainer name={props.name}/>
         );
     }
 };

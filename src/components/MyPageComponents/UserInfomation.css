@@ -1,0 +1,69 @@
+.user-information-container {
+    width: 50%;
+    border: 1px solid #000;
+    float: right;
+}
+
+.change-password-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.user-information-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.user-information-box div {
+    font-family: 'NanumBarunGothic';
+}
+
+.user-information-box .user-position {
+    font-size: 16px;
+    color: #3669dd;
+}
+
+.point-information-container {
+    margin-left: 5%;
+    width: 175px;
+    /*border: 1px solid #000;*/
+    margin-top: 5%;
+}
+.general-sentence {
+    color: #444;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.general-sentence-point {
+    font-size: 18px;
+    margin-top: 4px;
+}
+.basic-information-container {
+    margin-left: 5%;
+    width: auto;
+}
+.main-heading {
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    margin-left: 5%;
+}
+.subheading {
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+.division {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 1.2vh;
+}
+.exclamation-phrases {
+    font-size: 9px;
+    text-align: center;
+    margin-top: 8%;
+    color: #dc0e0e;
+}

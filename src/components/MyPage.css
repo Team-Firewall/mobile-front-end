@@ -1,0 +1,20 @@
+.information-component-container {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: table;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    height: auto;
+    
+    /*border: 1px solid #000;*/
+}
+.div-tag-top {
+    font-size: 25px;
+    font-weight: bold;
+}
+.div-tag-bottom {
+    margin-top: 7px;
+    font-size: 15px;
+}

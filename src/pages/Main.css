@@ -33,3 +33,6 @@
     font-size: 12px;
     margin-bottom: 10px;
 }
+.forward{
+    z-index: initial;
+}

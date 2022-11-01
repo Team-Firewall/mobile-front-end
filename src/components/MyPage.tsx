@@ -29,6 +29,13 @@ const MyPage: React.FC<ContainerProps> = ({ username }) => {
           )
         }
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div className={'edit-box-container'}>
           <div className={'edit-box first-edit-box'}>
             <div className={'text-container'}>

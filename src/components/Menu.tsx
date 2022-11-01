@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp,personCircleOutline, personCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp,personCircleOutline, personCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, logOutOutline, logOutSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -30,15 +30,15 @@ const appPages: AppPage[] = [
   },
   {
     title: '상/벌점 조회',
-    url: '/page/Outbox',
+    url: '/page/Points',
     iosIcon: ribbonOutline,
     mdIcon: ribbonSharp
   },
   {
-    title: 'Favorites',
-    url: '/page/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    title: '로그아웃',
+    url: '/',
+    iosIcon: logOutOutline,
+    mdIcon: logOutSharp
   },
   {
     title: 'Archived',

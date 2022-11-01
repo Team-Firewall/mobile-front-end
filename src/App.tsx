@@ -37,6 +37,9 @@ const App: React.FC = () => {
             <Route path="/" exact={true}>
               <MainPage />
             </Route>
+            {/* <Route path="/logout" exact={true}>
+              <Redirect to="/" />
+            </Route> */}
             <Route path="/ruleTable" exact={true}>
               <RuleTable/>
             </Route>

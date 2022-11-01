@@ -1,0 +1,11 @@
+.img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 375px;
+    text-align: center;
+}
+.result{
+    font-size: 17px;
+    font-weight: bold;
+}

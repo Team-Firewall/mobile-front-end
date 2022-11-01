@@ -11,7 +11,7 @@ const Main: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='forward'>
         <div className='title'>
 			<img src={'https://raw.github.com/GBSWHS/CI-Signature/main/symbol/symbol-only.png'}
 			className={'gbsw-logo'} alt={'school-logo'}/>

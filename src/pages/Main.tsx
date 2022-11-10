@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonInput, IonItem, IonLabel, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonRouterLink, IonButton, IonIcon } from '@ionic/react';
+import { IonInput, IonItem, IonLabel, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonRouterLink, IonButton, IonIcon, withIonLifeCycle, useIonViewWillEnter, useIonViewDidEnter } from '@ionic/react';
 import { useParams } from 'react-router';
 import { AiFillExclamationCircle } from 'react-icons/ai'
 import { logIn,book } from 'ionicons/icons';
@@ -8,7 +8,9 @@ import './Main.css';
 const Main: React.FC = () => {
 
   const { name } = useParams<{ name: string }>();
-
+	// useIonViewDidEnter(() => {
+		
+  // })
   return (
     <IonPage>
       <IonContent fullscreen className='forward'>

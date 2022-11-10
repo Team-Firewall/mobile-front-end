@@ -1,4 +1,4 @@
-import { IonContent, IonPage } from '@ionic/react';
+import { IonButton, IonContent, IonIcon, IonPage } from '@ionic/react';
 import React from 'react';
 const RuleTable: React.FC = () => {
     // https://ionicframework.com/docs/api/slides

@@ -1,4 +1,5 @@
 import {
+  IonButton,
   IonContent,
   IonIcon,
   IonItem,
@@ -11,7 +12,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp,personCircleOutline, personCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, logOutOutline, logOutSharp } from 'ionicons/icons';
+import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp,personCircleOutline, personCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, logOutOutline, logOutSharp, bookOutline, bookSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -35,28 +36,10 @@ const appPages: AppPage[] = [
     mdIcon: ribbonSharp
   },
   {
-    title: '로그아웃',
-    url: '/logout',
-    iosIcon: logOutOutline,
-    mdIcon: logOutSharp
-  },
-  {
-    title: '개',
-    url: '/page/Archived',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
-  },
-  {
-    title: '발',
-    url: '/page/Trash',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
-  },
-  {
-    title: '중',
-    url: '/page/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title:'상/벌점 리스트',
+    url: '/page/RuleTable',
+    iosIcon: bookOutline,
+    mdIcon: bookSharp
   }
 ];
 
@@ -86,9 +69,12 @@ const Menu: React.FC = () => {
               );
             })}
           </IonList>
-            
-          {/* 카피라이트랑 로그아웃 버튼 추가 */}
+          
         </IonContent>
+        <IonButton href='/logout' color="primary" expand="block" className='logout-button'>
+          <IonIcon slot="start" ios={logOutOutline} md={logOutSharp}></IonIcon>
+          로그아웃
+        </IonButton>
       </IonMenu>
     );
   }

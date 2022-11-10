@@ -23,12 +23,6 @@
     color: #3669dd;
 }
 
-.point-information-container {
-    margin-left: 5%;
-    width: 175px;
-    /*border: 1px solid #000;*/
-    margin-top: 5%;
-}
 .general-sentence {
     color: #444;
     margin-top: 4px;
@@ -40,7 +34,6 @@
     margin-top: 4px;
 }
 .basic-information-container {
-    margin-left: 5%;
     width: auto;
 }
 .main-heading {

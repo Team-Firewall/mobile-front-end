@@ -13,21 +13,21 @@ const MyPage: React.FC<ContainerProps> = ({ username }) => {
     return(
       <div>
         <div className={'information-component-container'}>
-        {
-          informationState === 0 && (
-            <UserInformation username={username}/>
-          )
-        }
-        {
-          informationState === 1 && (
-            <ParentsInformation/>
-          )
-        }
-        {
-          informationState === 2 && (
-            <ChangePassword/>
-          )
-        }
+          {
+            informationState === 0 && (
+              <UserInformation username={username}/>
+            )
+          }
+          {
+            informationState === 1 && (
+              <ParentsInformation/>
+            )
+          }
+          {
+            informationState === 2 && (
+              <ChangePassword/>
+            )
+          }
         </div>
         <br/>
         <br/>

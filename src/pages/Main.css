@@ -34,5 +34,5 @@
     margin-bottom: 10px;
 }
 .forward{
-    z-index: initial;
+    z-index: 999;
 }

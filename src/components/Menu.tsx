@@ -36,24 +36,24 @@ const appPages: AppPage[] = [
   },
   {
     title: '로그아웃',
-    url: '/',
+    url: '/logout',
     iosIcon: logOutOutline,
     mdIcon: logOutSharp
   },
   {
-    title: 'Archived',
+    title: '개',
     url: '/page/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    iosIcon: warningOutline,
+    mdIcon: warningSharp
   },
   {
-    title: 'Trash',
+    title: '발',
     url: '/page/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    iosIcon: warningOutline,
+    mdIcon: warningSharp
   },
   {
-    title: 'Spam',
+    title: '중',
     url: '/page/Spam',
     iosIcon: warningOutline,
     mdIcon: warningSharp

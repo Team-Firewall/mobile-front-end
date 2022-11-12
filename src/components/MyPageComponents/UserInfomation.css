@@ -33,9 +33,6 @@
     font-size: 18px;
     margin-top: 4px;
 }
-.basic-information-container {
-    width: auto;
-}
 .main-heading {
     font-size: 20px;
     font-family: 'Nanum Gothic', sans-serif;
@@ -44,7 +41,7 @@
     margin-left: 5%;
 }
 .subheading {
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold;
     margin-bottom: 2vh;
@@ -59,4 +56,13 @@
     text-align: center;
     margin-top: 8%;
     color: #dc0e0e;
+}
+.mypage-card {
+    min-width: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }

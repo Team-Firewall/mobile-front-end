@@ -13,7 +13,7 @@ const UserInformation: React.FC<ContainerProps> = (params) => {
   return (
     <div>
       <div className={"user-information-box"}>
-        <div className={"basic-information-container"}>
+        <div className={"basic-information-container mypage-card"}>
           <div>
             <div>
               <div className={"subheading"}>학생 정보</div>
@@ -23,9 +23,9 @@ const UserInformation: React.FC<ContainerProps> = (params) => {
                   {params.username}
                 </span>
                 <span className={"user-position"}>
-                  {userPosition === 0 && <span>학생</span>}
-                  {userPosition === 1 && <span>선생님</span>}
-                  {userPosition === 2 && <span>관리자</span>}
+                  {userPosition === 0 && <span> - student</span>}
+                  {userPosition === 1 && <span> - teacher</span>}
+                  {userPosition === 2 && <span> - admin</span>}
                 </span>
               </div>
             </div>
@@ -40,7 +40,7 @@ const UserInformation: React.FC<ContainerProps> = (params) => {
           <div className={"general-sentence"}>010-9285-9593</div>
         </div>
 
-        <div className={"point-information-container"}>
+        <div className={"point-information-container mypage-card"}>
           <div className={"subheading"}>
             상벌점 정보
             <div

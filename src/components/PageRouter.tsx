@@ -9,10 +9,10 @@ interface ContainerProps {
 }
 
 const PageRouter: React.FC<ContainerProps> = (props) => {
-  if (props.name == "MyPage") {
+  if (props.name === "MyPage") {
     return <MyPage username={props.username} />;
   }
-  if (props.name == "Points") {
+  if (props.name === "Points") {
     return <Points username={props.username} />;
   } 
   // if (props.name = "RuleTable") {

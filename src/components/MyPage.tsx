@@ -36,12 +36,12 @@ const MyPage: React.FC<ContainerProps> = ({ username }) => {
           }
           {
             informationState === 1 && (
-              <ParentsInformation/>
+              <ParentsInformation username={username}/>
             )
           }
           {
             informationState === 2 && (
-              <ChangePassword/>
+              <ChangePassword username={username}/>
             )
           }
         </div>

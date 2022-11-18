@@ -40,16 +40,18 @@
     margin-bottom: 3vh;
     margin-left: 5%;
 }
-.subheading {
+.mainheading {
     font-size: 23px;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold;
+    color: #006666;
     margin-bottom: 2vh;
 }
-.division {
+.division1 {
     font-size: 19px;
     font-weight: bold;
     margin-top: 1.2vh;
+    color: #003399;
 }
 .exclamation-phrases {
     font-size: 9px;

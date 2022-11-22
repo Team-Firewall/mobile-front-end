@@ -4,10 +4,7 @@ interface ContainerProps {
   username: string;
 }
 const UserInformation: React.FC<ContainerProps> = (params) => {
-  const [userGrade, setUserGrade] = useState<number>(1)
-  const [userClass, setUserClass] = useState<number>(1)
-  const [userNumber, setUserNumber] = useState<number>(2)
-  const [userPosition, setUserPosition] = useState<number>(2)
+  //여기 usesate 어디감 ㅋㅋ
     
   // const [username, setUserName] = useState<string>('테스트')
   return (
@@ -23,7 +20,7 @@ const UserInformation: React.FC<ContainerProps> = (params) => {
               </div>
             </div>
           </div>
-          <div className={"division"}>학무보1 전화번호</div>
+          <div className={"division"}>학부모1 전화번호</div>
           <div className={"general-sentence"}>010-1234-5678</div>
           <div className={"division"}>학부모2 전화번호</div>
           <div className={"general-sentence"}>010-1234-5678</div>

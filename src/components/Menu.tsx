@@ -12,7 +12,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp,personCircleOutline, personCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, logOutOutline, logOutSharp, bookOutline, bookSharp } from 'ionicons/icons';
+import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp, logOutOutline, logOutSharp, bookOutline, bookSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -45,7 +45,7 @@ const appPages: AppPage[] = [
 
 const Menu: React.FC = () => {
   const location = useLocation();
-  if(location.pathname=='/'||location.pathname=='/ruleTable'){
+  if(location.pathname==='/'||location.pathname==='/ruleTable'){
     //로그인을 하지 않았을때 아무것도 출력하지 않음.
     return (
       <></>

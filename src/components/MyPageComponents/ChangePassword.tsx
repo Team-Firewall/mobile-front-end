@@ -1,73 +1,44 @@
 import { useState } from "react";
-import "./UserInfomation.css";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+
+import "./ChangePassword.css";
 interface ContainerProps {
   username: string;
 }
-const UserInformation: React.FC<ContainerProps> = (params) => {
-  const [userGrade, setUserGrade] = useState<number>(2)
-  const [userClass, setUserClass] = useState<number>(2)
-  const [userNumber, setUserNumber] = useState<number>(2)
-  const [userPosition, setUserPosition] = useState<number>(0)
+const ChangePassword: React.FC<ContainerProps> = (params) => {
+  const [currentPassword, setCurrentPassword] = useState<string>('')
+  const [newPassword, setNewPassword] = useState<string>('')
+  const [checkPassword, setCheckPassword] = useState<string>('')
     
   // const [username, setUserName] = useState<string>('테스트')
   return (
     <div>
       <div className={"user-information-box"}>
         <div className={"basic-information-container mypage-card"}>
-          <div>
-            <div>
-              <div className={"subheading"}>학생 정보</div>
-              <div className={"division"}>이름</div>
-              <div className={"general-sentence"}>
-                <span className={"username general-sentence"}>
-                  {params.username}
-                </span>
-                <span className={"user-position"}>
-                  {userPosition === 0 && <span> - student</span>}
-                  {userPosition === 1 && <span> - teacher</span>}
-                  {userPosition === 2 && <span> - admin</span>}
-                </span>
-              </div>
+          <Box>
+            <div className={"subheading"}>비밀번호 재설정</div>
+            <div className="">
+              <TextField
+                id="demo-helper-text-aligned"
+                label="현재 비밀번호"
+                
+                type={'password'}
+                value={currentPassword}
+                onChange={(e) => setCurrentPassword(e.target.value)}
+              />
+              {
+                <div className={'error-message'}>비밀번호가 일치하지 않습니다.</div>
+              }
             </div>
-          </div>
-          <div className={"division"}>학번</div>
-          <div className={"general-sentence"}>
-            {userPosition === 0 && "경북소프트웨어고등학교"}{" "}
-            {userPosition === 1 && "봉양중학교"} {userGrade}학년 {userClass}반{" "}
-            {userNumber}번
-          </div>
-          <div className={"division"}>전화번호</div>
-          <div className={"general-sentence"}>010-9285-9593</div>
-        </div>
 
-        <div className={"point-information-container mypage-card"}>
-          <div className={"subheading"}>
-            상벌점 정보
-            <div
-              style={{ fontSize: "15px", color: "#264893", fontWeight: "bold" }}
-            >
-              {new Date().getFullYear()}학년도 상벌점 현황
+            <div className="">
+              
             </div>
-          </div>
-          <div className={"general-sentence-point"}>
-            <span style={{ color: "#17a617", fontWeight: "bold" }}>상점</span> 총
-            35점
-          </div>
-          <div className={"general-sentence-point"}>
-            <span style={{ color: "#d51515", fontWeight: "bold" }}>벌점</span> 총
-            20점
-          </div>
-          <div className={"general-sentence-point"}>
-            <span style={{ color: "#3E62BD", fontWeight: "bold" }}>누계점수</span>{" "}
-            총 15점
-          </div>
-        </div>
-
-        <div className={"exclamation-phrases"}>
-          * 정보에 이상이 있으면 선생님께 문의해 주세요.
+          </Box>
         </div>
       </div>
     </div>
   );
 };
-export default UserInformation;
+export default ChangePassword;

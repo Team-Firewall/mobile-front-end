@@ -1,14 +1,14 @@
 import { useState } from "react";
-import "./UserInfomation.css";
+import "./UserInformation.css";
 interface ContainerProps {
   username: string;
 }
 const UserInformation: React.FC<ContainerProps> = (params) => {
-  const [userGrade, setUserGrade] = useState<number>(2)
-  const [userClass, setUserClass] = useState<number>(2)
-  const [userNumber, setUserNumber] = useState<number>(2)
-  const [userPosition, setUserPosition] = useState<number>(0)
-    
+  const [userGrade, setUserGrade] = useState<number>(2);
+  const [userClass, setUserClass] = useState<number>(2);
+  const [userNumber, setUserNumber] = useState<number>(2);
+  const [userPosition, setUserPosition] = useState<number>(0);
+
   // const [username, setUserName] = useState<string>('테스트')
   return (
     <div>
@@ -50,15 +50,17 @@ const UserInformation: React.FC<ContainerProps> = (params) => {
             </div>
           </div>
           <div className={"general-sentence-point"}>
-            <span style={{ color: "#17a617", fontWeight: "bold" }}>상점</span> 총
-            35점
+            <span style={{ color: "#17a617", fontWeight: "bold" }}>상점</span>{" "}
+            총 35점
           </div>
           <div className={"general-sentence-point"}>
-            <span style={{ color: "#d51515", fontWeight: "bold" }}>벌점</span> 총
-            20점
+            <span style={{ color: "#d51515", fontWeight: "bold" }}>벌점</span>{" "}
+            총 20점
           </div>
           <div className={"general-sentence-point"}>
-            <span style={{ color: "#3E62BD", fontWeight: "bold" }}>누계점수</span>{" "}
+            <span style={{ color: "#3E62BD", fontWeight: "bold" }}>
+              누계점수
+            </span>{" "}
             총 15점
           </div>
         </div>

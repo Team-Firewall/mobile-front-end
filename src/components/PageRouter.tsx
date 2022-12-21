@@ -1,4 +1,3 @@
-
 import ExploreContainer from "./ExploreContainer";
 import MyPage from "./MyPage";
 import Points from "./Points";
@@ -14,7 +13,7 @@ const PageRouter: React.FC<ContainerProps> = (props) => {
   }
   if (props.name === "Points") {
     return <Points username={props.username} />;
-  } 
+  }
   // if (props.name = "RuleTable") {
   //   return <RuleTable/>
   // }

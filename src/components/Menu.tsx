@@ -9,11 +9,20 @@ import {
   IonMenu,
   IonMenuToggle,
   IonNote,
-} from '@ionic/react';
+} from "@ionic/react";
 
-import { useLocation } from 'react-router-dom';
-import { idCardOutline,idCardSharp,ribbonOutline,ribbonSharp, logOutOutline, logOutSharp, bookOutline, bookSharp } from 'ionicons/icons';
-import './Menu.css';
+import { useLocation } from "react-router-dom";
+import {
+  idCardOutline,
+  idCardSharp,
+  ribbonOutline,
+  ribbonSharp,
+  logOutOutline,
+  logOutSharp,
+  bookOutline,
+  bookSharp,
+} from "ionicons/icons";
+import "./Menu.css";
 
 interface AppPage {
   url: string;
@@ -24,34 +33,31 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: '마이페이지',
-    url: '/page/MyPage',
+    title: "마이페이지",
+    url: "/page/MyPage",
     iosIcon: idCardOutline,
-    mdIcon: idCardSharp
+    mdIcon: idCardSharp,
   },
   {
-    title: '상/벌점 조회',
-    url: '/page/Points',
+    title: "상/벌점 조회",
+    url: "/page/Points",
     iosIcon: ribbonOutline,
-    mdIcon: ribbonSharp
+    mdIcon: ribbonSharp,
   },
   {
-    title:'상/벌점 리스트',
-    url: '/page/RuleTable',
+    title: "상/벌점 리스트",
+    url: "/page/RuleTable",
     iosIcon: bookOutline,
-    mdIcon: bookSharp
-  }
+    mdIcon: bookSharp,
+  },
 ];
 
 const Menu: React.FC = () => {
   const location = useLocation();
-  if(location.pathname==='/'||location.pathname==='/ruleTable'){
+  if (location.pathname === "/" || location.pathname === "/ruleTable") {
     //로그인을 하지 않았을때 아무것도 출력하지 않음.
-    return (
-      <></>
-    )
-  }
-  else{
+    return <></>;
+  } else {
     return (
       <IonMenu contentId="main" type="overlay">
         <IonContent>
@@ -61,17 +67,33 @@ const Menu: React.FC = () => {
             {appPages.map((appPage, index) => {
               return (
                 <IonMenuToggle key={index} autoHide={false}>
-                  <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                    <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
+                  <IonItem
+                    className={
+                      location.pathname === appPage.url ? "selected" : ""
+                    }
+                    routerLink={appPage.url}
+                    routerDirection="none"
+                    lines="none"
+                    detail={false}
+                  >
+                    <IonIcon
+                      slot="start"
+                      ios={appPage.iosIcon}
+                      md={appPage.mdIcon}
+                    />
                     <IonLabel>{appPage.title}</IonLabel>
                   </IonItem>
                 </IonMenuToggle>
               );
             })}
           </IonList>
-          
         </IonContent>
-        <IonButton href='/logout' color="primary" expand="block" className='logout-button'>
+        <IonButton
+          href="/logout"
+          color="primary"
+          expand="block"
+          className="logout-button"
+        >
           <IonIcon slot="start" ios={logOutOutline} md={logOutSharp}></IonIcon>
           로그아웃
         </IonButton>

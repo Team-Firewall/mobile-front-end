@@ -1,3 +1,6 @@
+:root{
+    font-family: 'Nanum Gothic', sans-serif;
+}
 .information-component-container {
     display: table;
     margin-top: 20px;

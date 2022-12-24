@@ -7,10 +7,10 @@ interface ContainerProps {
   username: string;
 }
 const ChangePassword: React.FC<ContainerProps> = (params) => {
-  const [currentPassword, setCurrentPassword] = useState<string>('')
-  const [newPassword, setNewPassword] = useState<string>('')
-  const [checkPassword, setCheckPassword] = useState<string>('')
-    
+  const [currentPassword, setCurrentPassword] = useState<string>("");
+  const [newPassword, setNewPassword] = useState<string>("");
+  const [checkPassword, setCheckPassword] = useState<string>("");
+
   // const [username, setUserName] = useState<string>('테스트')
   return (
     <div>
@@ -18,22 +18,43 @@ const ChangePassword: React.FC<ContainerProps> = (params) => {
         <div className={"basic-information-container mypage-card"}>
           <Box>
             <div className={"subheading"}>비밀번호 재설정</div>
-            <div className="">
+            <div className="gap-input-area">
               <TextField
                 id="demo-helper-text-aligned"
                 label="현재 비밀번호"
-                
-                type={'password'}
+                fullWidth
+                type={"password"}
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
               />
               {
-                <div className={'error-message'}>비밀번호가 일치하지 않습니다.</div>
+                <div className={"error-message"}>
+                  기존 비밀번호와 일치하지 않습니다.
+                </div>
               }
             </div>
 
-            <div className="">
-              
+            <div className="gap-input-area">
+              <TextField
+                id="demo-helper-text-aligned"
+                label="새 비밀번호"
+                fullWidth
+                type={"password"}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+              />
+              {<div className="error-message">비밀번호는 4자 이상이어야 합니다.</div>}
+            </div>
+            <div className="gap-input-area">
+              <TextField
+                id="demo-helper-text-aligned"
+                label="새 비밀번호 확인"
+                fullWidth
+                type={"password"}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+              />
+              {<div className="error-message">새 비밀번호를 확인해 주세요</div>}
             </div>
           </Box>
         </div>

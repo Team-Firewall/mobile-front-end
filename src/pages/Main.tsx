@@ -42,7 +42,7 @@ const Main: React.FC = () => {
           <div className={"tag-bottom"}>상벌점 시스템</div>
         </div>
         <div className="login_container">
-          <IonItem fill="outline">
+          <IonItem fill="outline" >
             <IonLabel position="floating">아이디</IonLabel>
             <IonInput placeholder="학년, 반, 번호"></IonInput>
           </IonItem>

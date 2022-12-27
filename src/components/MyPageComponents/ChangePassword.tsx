@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 import "./ChangePassword.css";
+import { IonButton } from "@ionic/react";
 interface ContainerProps {
   username: string;
 }
@@ -56,6 +57,15 @@ const ChangePassword: React.FC<ContainerProps> = (params) => {
               />
               {<div className="error-message">새 비밀번호를 확인해 주세요</div>}
             </div>
+            <IonButton
+              // href="/logout"
+              color="primary"
+              expand="block"
+              className="logout-button"
+            >
+              {/* <IonIcon slot="start" ios={logOutOutline} md={logOutSharp}></IonIcon> */}
+              재설정
+            </IonButton>
           </Box>
         </div>
       </div>
